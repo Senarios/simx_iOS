@@ -1,0 +1,54 @@
+
+/* Class = "UIButton"; normalTitle = "Twitter"; ObjectID = "2qC-7b-fhm"; */
+"2qC-7b-fhm.normalTitle" = "Twitter";
+
+/* Class = "UINavigationItem"; title = "Streams"; ObjectID = "3nq-tc-XS9"; */
+"3nq-tc-XS9.title" = "Streams";
+
+/* Class = "UIButton"; normalTitle = "Facebook"; ObjectID = "4ca-9a-t1I"; */
+"4ca-9a-t1I.normalTitle" = "Facebook";
+
+/* Class = "UIButton"; normalTitle = "Go Live"; ObjectID = "5fN-ox-pxk"; */
+"5fN-ox-pxk.normalTitle" = "Go Live";
+
+/* Class = "UIButton"; normalTitle = "Sign up"; ObjectID = "DmV-Sc-jwl"; */
+"DmV-Sc-jwl.normalTitle" = "Sign up";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "Hp5-hb-4Qk"; */
+"Hp5-hb-4Qk.text" = "Label";
+
+/* Class = "UIButton"; normalTitle = "Start"; ObjectID = "S2t-7s-aSB"; */
+"S2t-7s-aSB.normalTitle" = "Start";
+
+/* Class = "UITextField"; placeholder = "password"; ObjectID = "SQd-Ic-TGc"; */
+"SQd-Ic-TGc.placeholder" = "password";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "XV4-xu-Gb6"; */
+"XV4-xu-Gb6.text" = "Label";
+
+/* Class = "UIButton"; normalTitle = "Linked In"; ObjectID = "Zzz-7h-o1d"; */
+"Zzz-7h-o1d.normalTitle" = "Linked In";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "h4l-YC-Wz1"; */
+"h4l-YC-Wz1.text" = "Label";
+
+/* Class = "UIButton"; normalTitle = "LOGIN"; ObjectID = "hmW-n1-osh"; */
+"hmW-n1-osh.normalTitle" = "LOGIN";
+
+/* Class = "UILabel"; text = "Don't have an account?"; ObjectID = "jNu-cK-pSg"; */
+"jNu-cK-pSg.text" = "Don't have an account?";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "jOg-3l-kHe"; */
+"jOg-3l-kHe.text" = "Label";
+
+/* Class = "UILabel"; text = "Interact with broadcasters in real-time as your comments float on screen"; ObjectID = "kGG-el-r2E"; */
+"kGG-el-r2E.text" = "Interact with broadcasters in real-time as your comments float on screen";
+
+/* Class = "UITextField"; placeholder = "email"; ObjectID = "ofX-UI-nRz"; */
+"ofX-UI-nRz.placeholder" = "email";
+
+/* Class = "UIButton"; normalTitle = "Sign In"; ObjectID = "r4C-Pp-KxQ"; */
+"r4C-Pp-KxQ.normalTitle" = "Sign In";
+
+/* Class = "UILabel"; text = "Stream Title"; ObjectID = "rgv-XW-vK7"; */
+"rgv-XW-vK7.text" = "Stream Title";

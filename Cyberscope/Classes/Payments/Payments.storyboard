@@ -1,0 +1,401 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES" initialViewController="4aN-7Y-Y2x">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Raleway-Regular.ttf">
+            <string>Raleway-Regular</string>
+        </array>
+        <array key="Raleway-SemiBold.ttf">
+            <string>Raleway-SemiBold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Add Credits View Controller-->
+        <scene sceneID="96E-DW-RWC">
+            <objects>
+                <viewController id="8o6-xd-pUw" customClass="AddCreditsViewController" customModule="SimX" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="VBu-yJ-qGh"/>
+                        <viewControllerLayoutGuide type="bottom" id="gWj-qS-NFm"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="GNC-Ty-BYe">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7Mh-nf-18Z">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Payment" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xF6-jb-irh">
+                                        <rect key="frame" x="60" y="12" width="89" height="27"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Raleway-SemiBold" family="Raleway" pointSize="21"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Current Credits: 0.0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8eh-Xr-Pot">
+                                        <rect key="frame" x="60" y="39" width="165" height="23"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.13036608699999999" green="0.32613858579999999" blue="0.49230384830000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="paypal_logo" translatesAutoresizingMaskIntoConstraints="NO" id="CbY-Xv-ghf">
+                                <rect key="frame" x="86" y="333" width="194" height="110"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iEY-0q-iy4">
+                                <rect key="frame" x="99" y="297" width="177" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.13036608699999999" green="0.32613858579999999" blue="0.49230384830000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Raleway-SemiBold" family="Raleway" pointSize="27"/>
+                                <state key="normal" title="Add Credit">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="10"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="layer.borderColor">
+                                        <color key="value" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="AddCreditsButtonTapped:" destination="8o6-xd-pUw" eventType="touchUpInside" id="pgE-h2-kXK"/>
+                                </connections>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UXi-7Y-uNE">
+                                <rect key="frame" x="91" y="612" width="194" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Apply coupon code">
+                                            <attributes>
+                                                <color key="NSColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                <font key="NSFont" size="18" name="HelveticaNeue"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                                                <integer key="NSUnderline" value="1"/>
+                                                <color key="NSUnderlineColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="10"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="ApplyCoupen_ButtonTapped:" destination="8o6-xd-pUw" eventType="touchUpInside" id="eNF-vu-NVX"/>
+                                </connections>
+                            </button>
+                            <textView hidden="YES" clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" text=" Please select the amount in *Prefered Currency* you wish to recharge your account" textAlignment="center" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lRc-iG-Z4p">
+                                <rect key="frame" x="35" y="526" width="305" height="121"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bRF-H5-QPI">
+                                <rect key="frame" x="35" y="206" width="340" height="47"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Tn-1v-dg2">
+                                        <rect key="frame" x="4" y="12" width="35" height="38"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="uncheckedImage1"/>
+                                        <connections>
+                                            <action selector="checkBoxButtonTapped:" destination="8o6-xd-pUw" eventType="touchUpInside" id="yCp-6j-B7W"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="kEC-MG-tH0">
+                                        <rect key="frame" x="48" y="10" width="246" height="44"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <attributedString key="attributedText">
+                                            <fragment content="I agree to the">
+                                                <attributes>
+                                                    <font key="NSFont" metaFont="system" size="15"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content=" ">
+                                                <attributes>
+                                                    <color key="NSColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <font key="NSFont" metaFont="system" size="15"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content="Terms and Conditions">
+                                                <attributes>
+                                                    <color key="NSColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <font key="NSFont" metaFont="system" size="15"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                                                    <integer key="NSUnderline" value="1"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cGO-B3-RSG">
+                                <rect key="frame" x="16" y="20" width="10" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="backIcon_white">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="keF-kX-WKL">
+                                <rect key="frame" x="3" y="3" width="46" height="53"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="backButton:" destination="8o6-xd-pUw" eventType="touchUpInside" id="SLt-Eu-IZ8"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bn5-qO-Vt4">
+                                <rect key="frame" x="26" y="126" width="323" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter Amount ?" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AIO-Rx-O1v">
+                                        <rect key="frame" x="15" y="4" width="293" height="42"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemGray4Color"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text=" Enter Amount" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.69999998807907104" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sDm-y8-YyP">
+                                <rect key="frame" x="35" y="111" width="97" height="28"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="14"/>
+                                <color key="textColor" red="0.12941176469999999" green="0.12941176469999999" blue="0.12941176469999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="AddCreditButton" destination="iEY-0q-iy4" id="HQf-RS-pxt"/>
+                        <outlet property="amountTextField" destination="AIO-Rx-O1v" id="N5y-8m-v1v"/>
+                        <outlet property="button_applyCouponCode" destination="UXi-7Y-uNE" id="75C-UN-LSN"/>
+                        <outlet property="checkBoxButton" destination="9Tn-1v-dg2" id="L6F-l1-bQp"/>
+                        <outlet property="label_termsAndConditions" destination="kEC-MG-tH0" id="2uq-Qt-80g"/>
+                        <outlet property="label_titleNote" destination="lRc-iG-Z4p" id="XBs-cw-owc"/>
+                        <outlet property="lblCurrentCredits" destination="8eh-Xr-Pot" id="XnX-f9-cEr"/>
+                        <outlet property="viewEnterAmount" destination="bn5-qO-Vt4" id="LA0-1K-kKf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VZt-3W-fLJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-10805.6" y="2353.6731634182911"/>
+        </scene>
+        <!--Purchaseplan-->
+        <scene sceneID="Vqv-Qn-kLW">
+            <objects>
+                <viewController storyboardIdentifier="AddPaymentCredits" id="4aN-7Y-Y2x" customClass="Purchaseplan" customModule="SimX" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Guo-Vo-Xkh"/>
+                        <viewControllerLayoutGuide type="bottom" id="ozt-LP-ShM"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="LI4-FT-Sw2">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bar-IU-Hvk">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add Credits" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IwP-su-QdI">
+                                        <rect key="frame" x="60" y="10" width="154" height="26"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="27"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Current Credits:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OmP-ck-ueb">
+                                        <rect key="frame" x="60" y="41" width="108" height="15"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                                        <color key="textColor" red="0.21176470588235294" green="0.21176470588235294" blue="0.21176470588235294" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lib-YW-E2n">
+                                        <rect key="frame" x="20" y="20.5" width="23" height="23"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="lib-YW-E2n" secondAttribute="height" multiplier="1:1" id="hM1-q8-dXe"/>
+                                        </constraints>
+                                        <state key="normal" image="buttonback"/>
+                                        <connections>
+                                            <action selector="backButton:" destination="4aN-7Y-Y2x" eventType="touchUpInside" id="sBR-Qb-5tg"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9yY-OM-NUA">
+                                        <rect key="frame" x="171" y="40" width="30" height="17"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                                        <color key="textColor" red="0.043137254901960784" green="0.6470588235294118" blue="0.27058823529411763" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.95294117647058818" green="0.97254901960784312" blue="0.99607843137254903" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="IwP-su-QdI" firstAttribute="width" secondItem="bar-IU-Hvk" secondAttribute="width" multiplier="0.410667" id="0BW-59-0SB"/>
+                                    <constraint firstItem="OmP-ck-ueb" firstAttribute="top" secondItem="bar-IU-Hvk" secondAttribute="top" constant="41" id="2QT-Rq-idp"/>
+                                    <constraint firstItem="IwP-su-QdI" firstAttribute="top" secondItem="bar-IU-Hvk" secondAttribute="top" constant="10" id="4ff-Z3-Vyr"/>
+                                    <constraint firstItem="IwP-su-QdI" firstAttribute="leading" secondItem="bar-IU-Hvk" secondAttribute="leading" constant="60" id="4jO-9Q-Z1O"/>
+                                    <constraint firstItem="IwP-su-QdI" firstAttribute="height" secondItem="bar-IU-Hvk" secondAttribute="height" multiplier="0.40625" id="Eeu-K8-FYp"/>
+                                    <constraint firstItem="OmP-ck-ueb" firstAttribute="leading" secondItem="bar-IU-Hvk" secondAttribute="leading" constant="60" id="EyL-iS-bXJ"/>
+                                    <constraint firstItem="lib-YW-E2n" firstAttribute="height" secondItem="bar-IU-Hvk" secondAttribute="height" multiplier="0.359375" id="I5s-uf-FX3"/>
+                                    <constraint firstItem="OmP-ck-ueb" firstAttribute="height" secondItem="bar-IU-Hvk" secondAttribute="height" multiplier="0.234375" id="Rvg-BL-O4U"/>
+                                    <constraint firstAttribute="height" constant="64" id="UIk-yg-kED"/>
+                                    <constraint firstItem="lib-YW-E2n" firstAttribute="leading" secondItem="bar-IU-Hvk" secondAttribute="leading" constant="20" symbolic="YES" id="VdT-IU-Cac"/>
+                                    <constraint firstItem="9yY-OM-NUA" firstAttribute="leading" secondItem="OmP-ck-ueb" secondAttribute="trailing" constant="3" id="aB8-mv-Pen"/>
+                                    <constraint firstItem="OmP-ck-ueb" firstAttribute="width" secondItem="bar-IU-Hvk" secondAttribute="width" multiplier="0.288" id="cGu-7Z-WYc"/>
+                                    <constraint firstItem="lib-YW-E2n" firstAttribute="centerY" secondItem="bar-IU-Hvk" secondAttribute="centerY" id="dhZ-Zn-ZSS"/>
+                                    <constraint firstItem="9yY-OM-NUA" firstAttribute="height" secondItem="bar-IU-Hvk" secondAttribute="height" multiplier="0.265625" id="fLY-m3-EiL"/>
+                                    <constraint firstItem="9yY-OM-NUA" firstAttribute="centerY" secondItem="OmP-ck-ueb" secondAttribute="centerY" id="nt3-Nu-heE"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jeI-De-wEy">
+                                <rect key="frame" x="35" y="94" width="305" height="50"/>
+                                <subviews>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9DY-6Z-AIc">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <color key="backgroundColor" red="0.0" green="0.19607843137254902" blue="0.93725490196078431" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="9DY-6Z-AIc" secondAttribute="height" multiplier="1:1" id="jtm-S0-RTt"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                        <state key="normal" title="10">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="btn10_pressed:" destination="4aN-7Y-Y2x" eventType="touchUpInside" id="UNM-Os-dPH"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eQz-hd-0kP">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="eQz-hd-0kP" secondAttribute="height" multiplier="1:1" id="Ovw-md-KaK"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                        <state key="normal" title="£50">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="btn50_pressed:" destination="4aN-7Y-Y2x" eventType="touchUpInside" id="YD6-eS-2bp"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1rd-Wt-07l">
+                                        <rect key="frame" x="127.5" y="0.0" width="50" height="50"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="1rd-Wt-07l" secondAttribute="height" multiplier="1:1" id="tXU-mk-zL1"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                        <state key="normal" title="£100">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="btn100_pressed:" destination="4aN-7Y-Y2x" eventType="touchUpInside" id="XIJ-h3-gd8"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gws-a8-cLP">
+                                        <rect key="frame" x="255" y="0.0" width="50" height="50"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="gws-a8-cLP" secondAttribute="height" multiplier="1:1" id="8hd-cU-iDN"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                        <state key="normal" title="£150">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="btn150_pressed:" destination="4aN-7Y-Y2x" eventType="touchUpInside" id="ZmP-nN-1gQ"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.95294117647058818" green="0.97254901960784312" blue="0.99607843137254903" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="gws-a8-cLP" firstAttribute="centerY" secondItem="jeI-De-wEy" secondAttribute="centerY" id="8Dg-e9-K9D"/>
+                                    <constraint firstItem="eQz-hd-0kP" firstAttribute="centerY" secondItem="jeI-De-wEy" secondAttribute="centerY" id="DRM-Pf-UWS"/>
+                                    <constraint firstItem="gws-a8-cLP" firstAttribute="height" secondItem="jeI-De-wEy" secondAttribute="height" id="PND-4Q-dKd"/>
+                                    <constraint firstItem="9DY-6Z-AIc" firstAttribute="centerY" secondItem="jeI-De-wEy" secondAttribute="centerY" id="Qgr-ps-Niy"/>
+                                    <constraint firstItem="gws-a8-cLP" firstAttribute="leading" secondItem="jeI-De-wEy" secondAttribute="leading" constant="255" id="Tg8-M2-FS2"/>
+                                    <constraint firstItem="1rd-Wt-07l" firstAttribute="centerY" secondItem="jeI-De-wEy" secondAttribute="centerY" id="V6W-Fv-8Uy"/>
+                                    <constraint firstItem="eQz-hd-0kP" firstAttribute="height" secondItem="jeI-De-wEy" secondAttribute="height" id="gts-xx-nIK"/>
+                                    <constraint firstItem="eQz-hd-0kP" firstAttribute="leading" secondItem="jeI-De-wEy" secondAttribute="leading" id="lVm-E4-SiU"/>
+                                    <constraint firstItem="9DY-6Z-AIc" firstAttribute="leading" secondItem="jeI-De-wEy" secondAttribute="leading" id="meK-QZ-pLT"/>
+                                    <constraint firstItem="9DY-6Z-AIc" firstAttribute="height" secondItem="jeI-De-wEy" secondAttribute="height" id="uRY-DC-KVR"/>
+                                    <constraint firstItem="1rd-Wt-07l" firstAttribute="height" secondItem="jeI-De-wEy" secondAttribute="height" id="vnD-g8-IHM"/>
+                                    <constraint firstItem="1rd-Wt-07l" firstAttribute="centerX" secondItem="jeI-De-wEy" secondAttribute="centerX" id="wo3-qW-gDl"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wEu-Ka-mJz">
+                                <rect key="frame" x="35" y="165" width="290" height="15"/>
+                                <string key="text">Transaction charges for Apple pay can effect your 
+</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="0.87450980392156863" green="0.25490196078431371" blue="0.33725490196078434" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="amount to be transfered" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TBQ-au-jlW">
+                                <rect key="frame" x="35" y="183" width="137" height="15"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="0.87450980389999999" green="0.25490196079999999" blue="0.33725490200000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.95294117647058818" green="0.97254901960784312" blue="0.99607843137254903" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="TBQ-au-jlW" firstAttribute="leading" secondItem="wEu-Ka-mJz" secondAttribute="leading" id="0KP-TR-y9e"/>
+                            <constraint firstItem="bar-IU-Hvk" firstAttribute="top" secondItem="Guo-Vo-Xkh" secondAttribute="bottom" id="56d-Dn-Wta"/>
+                            <constraint firstItem="TBQ-au-jlW" firstAttribute="width" secondItem="LI4-FT-Sw2" secondAttribute="width" multiplier="0.365333" id="6n4-tY-ZG6"/>
+                            <constraint firstItem="wEu-Ka-mJz" firstAttribute="top" secondItem="jeI-De-wEy" secondAttribute="bottom" constant="21" id="Efc-ma-36x"/>
+                            <constraint firstItem="jeI-De-wEy" firstAttribute="height" secondItem="LI4-FT-Sw2" secondAttribute="height" multiplier="0.0749625" id="ILA-Jm-awM"/>
+                            <constraint firstAttribute="trailing" secondItem="bar-IU-Hvk" secondAttribute="trailing" id="Mra-1H-efo"/>
+                            <constraint firstItem="jeI-De-wEy" firstAttribute="top" secondItem="Guo-Vo-Xkh" secondAttribute="bottom" constant="94" id="Oxy-Ws-d9f"/>
+                            <constraint firstItem="wEu-Ka-mJz" firstAttribute="height" secondItem="LI4-FT-Sw2" secondAttribute="height" multiplier="0.0224888" id="QQB-7q-M6I"/>
+                            <constraint firstItem="wEu-Ka-mJz" firstAttribute="leading" secondItem="LI4-FT-Sw2" secondAttribute="leading" constant="35" id="WJf-0l-jAw"/>
+                            <constraint firstItem="TBQ-au-jlW" firstAttribute="height" secondItem="LI4-FT-Sw2" secondAttribute="height" multiplier="0.0224888" id="Yoh-Cl-lFA"/>
+                            <constraint firstItem="wEu-Ka-mJz" firstAttribute="width" secondItem="LI4-FT-Sw2" secondAttribute="width" multiplier="0.773333" id="aCW-f3-06V"/>
+                            <constraint firstItem="TBQ-au-jlW" firstAttribute="top" secondItem="wEu-Ka-mJz" secondAttribute="bottom" constant="3" id="bjn-NV-2a2"/>
+                            <constraint firstItem="jeI-De-wEy" firstAttribute="centerX" secondItem="LI4-FT-Sw2" secondAttribute="centerX" id="cQS-Om-EVw"/>
+                            <constraint firstItem="jeI-De-wEy" firstAttribute="width" secondItem="LI4-FT-Sw2" secondAttribute="width" multiplier="0.813333" id="ir6-Cc-MZf"/>
+                            <constraint firstItem="bar-IU-Hvk" firstAttribute="leading" secondItem="LI4-FT-Sw2" secondAttribute="leading" id="jDi-An-Myc"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="btn10" destination="9DY-6Z-AIc" id="khk-OM-l53"/>
+                        <outlet property="btn100" destination="1rd-Wt-07l" id="7BM-4G-SxI"/>
+                        <outlet property="btn150" destination="gws-a8-cLP" id="5MP-hQ-6Fs"/>
+                        <outlet property="btn50" destination="eQz-hd-0kP" id="zWE-YX-F8h"/>
+                        <outlet property="lblCurrentCredits" destination="9yY-OM-NUA" id="xiJ-lY-miA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="F60-Ri-Vok" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-9967.2000000000007" y="2339.2803598200903"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="backIcon_white" width="10" height="17"/>
+        <image name="buttonback" width="16" height="12"/>
+        <image name="paypal_logo" width="320" height="160"/>
+        <image name="uncheckedImage1" width="900" height="900"/>
+        <systemColor name="systemGray4Color">
+            <color red="0.81960784313725488" green="0.81960784313725488" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
